@@ -1,0 +1,8 @@
+src/*.class
+langs/
+
+bin
+include
+lib
+pip-*
+share
