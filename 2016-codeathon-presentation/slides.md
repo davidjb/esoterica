@@ -191,48 +191,44 @@ I can haz Internet memes as syntax.
 
 ~~~bash
 $ lci src/codeathon.lols
-Welcome to Codeathon
-2016
-See you around in
-2017
 ~~~
 
 ---
 
 ### Exceptions
 
-    Exception in thread "main" org.parboiled.errors.ParsingException:
-    WHAT THE **** DID I DO WRONG:
-    Invalid input ''', expected ' ', '\t', Operand or '"' (line 11, pos 18):
-    TALK TO THE HAND 'true'
-            at org.arnoldc.ArnoldParser.parse(ArnoldParser.scala:203)
-            at org.arnoldc.ArnoldGenerator.generate(ArnoldGenerator.scala:10)
-            at org.arnoldc.ArnoldC$.main(ArnoldC.scala:21)
-            at org.arnoldc.ArnoldC.main(ArnoldC.scala)
+~~~
+~~~
 
 ---
 
 ## Why use it
 
-* If I was obsessed with Arnie
-* If I had a better knowledge of these movies
-* Good documentation
-* Decent debugging
-* Funny exceptions
-* …?
+* Complete language!
+* Versioned, well supported and spec docs
+* Well supported and great docs
+* Whitespace!
+* *HILARIOUS*
 
 ---
 
 ## Why not
 
-* It's written in Java.  Eww.
-* Hard to install
-* Only has 16-bit signed int variables (!!)
-* No less-than operator
+* `NUMBR` vs `NUMBAR`
+* `IM IN YR LOOPZ UPPIN/NERFIN` don't work yet
 
 ---
+
 ---
 
+# Python
+
+Or, we just use Python
+
+~~~python
+from datetime import datetime
+print('%s days til Codeathon!' % (datetime(int(input('Future Year? ')), 6, 25) - datetime.now()).days)
+~~~
 
 ## Brainf***
 
