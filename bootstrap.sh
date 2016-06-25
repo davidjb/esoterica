@@ -42,11 +42,6 @@ make
 cp lci ../../bin
 popd
 
-
-#Ook
-
-#INTERCAL
-
 #Brainfuck
 
 #Anguish

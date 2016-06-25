@@ -75,11 +75,10 @@ TALK TO THE HAND 'true'
 
 ## Why use it
 
-* If I was obsessed with Arnie
-* If I had a better knowledge of these movies
 * Good documentation
 * Decent debugging
 * Funny exceptions
+* You *are* Arnold Schwarzenegger
 
 ---
 
@@ -160,13 +159,14 @@ Part of the beauty of me is I'm very rich.
 * Easily mix in comments (ignores non-keywords)
 * Uses Python 3
 * Guaranteed single end point to a program
+* You *are* Donald Trump
 
 ---
 
 ## Why not
 
 * No floats and ints must be > 1,000,000
-* No i18n
+* No i18n (American English only)
 * No Windows support (Trump is non-PC)
 * Docs+Wiki disappeared from public repo on Saturday!
 * Debugging is awful
@@ -183,6 +183,32 @@ I can haz Internet memes as syntax.
 ---
 
 ~~~
+OBTW CODEATHON 2016!
+     long comments FTW TLDR
+HAI 1.2
+  CAN HAS STDIO?
+  I HAS A TODAY, TODAY R 2016
+  I HAS A CODEATHON, CODEATHON R NOOB
+  VISIBLE "Future Year? "
+  GIMMEH CODEATHON, CODEATHON IS NOW A NUMBR
+
+  DIFFRINT CODEATHON AN SMALLR OF CODEATHON AN TODAY
+  O RLY?
+    YA RLY
+      I HAS A YEARZ, YEARZ R DIFF OF CODEATHON AN TODAY
+      I HAS A DAYZ, DAYZ R -2
+      IM IN YR LOOPZ
+        YEARZ R DIFF OF YEARZ AN 1
+        DAYZ R SUM OF DAYZ AN 365
+        BOTH SAEM 0 MOD OF YEARZ AN 4, O RLY?, YA RLY, DAYZ R SUM OF DAYZ AN 1, OIC
+        BOTH SAEM YEARZ AN 0, O RLY?, YA RLY, GTFO, OIC
+      IM OUTTA YR LOOPZ
+      VISIBLE SMOOSH "ZOMG Codeathon " CODEATHON " starting in... :)" MKAY
+      VISIBLE DAYZ " days! Getz ready!"
+    NO WAI
+      VISIBLE "Later year pls. KTHXBAI."
+  OIC
+KTHXBYE
 ~~~
 
 ---
@@ -191,24 +217,21 @@ I can haz Internet memes as syntax.
 
 ~~~bash
 $ lci src/codeathon.lols
-~~~
-
----
-
-### Exceptions
-
-~~~
+Future Year?
+2050
+ZOMG Codeathon 2050 starting in...
+12417 days! Getz ready!
 ~~~
 
 ---
 
 ## Why use it
 
-* Complete language!
-* Versioned, well supported and spec docs
-* Well supported and great docs
-* Whitespace!
-* *HILARIOUS*
+* Uses Gen-Y natural language
+* Well supported
+* Official spec docs (!!)
+* Versioned
+* Whitespace
 
 ---
 
@@ -216,46 +239,74 @@ $ lci src/codeathon.lols
 
 * `NUMBR` vs `NUMBAR`
 * `IM IN YR LOOPZ UPPIN/NERFIN` don't work yet
+* Meanwhile in Python:
+
+  ~~~python
+  from datetime import datetime
+  print('%s days til Codeathon!' % (datetime(int(
+      input('Future Year? ')), 6, 26) - datetime.now()).days)
+  ~~~
 
 ---
 
+![deadfish](img/deadfish.png) <!-- .element style="height: 200px" -->
+
+# Deadfish
+
+You have one variable and can do the following:
+
 ---
 
-# Python
+* `i` / `x`: increment
+* `d` / `d`: decrement
+* `s` / `k`: square
+* `o` / `c`: output
 
-Or, we just use Python
+Note the **XKCD** reference
 
-~~~python
-from datetime import datetime
-print('%s days til Codeathon!' % (datetime(int(input('Future Year? ')), 6, 25) - datetime.now()).days)
+---
+
+~~~deadfish
+Fibonacci
+» icciciciiciiiciiiiiciiiiiiiiciiiiiiiiiiiiiciiiiiiiiiiiiiiiiiiiiic
+LOST numbers
+» iiiiciiiiciiiiiiiciciiiiiiiciiiiiiiiiiiiiiiiiiic
+"Codeathon 2016" in ASCII
+» iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+iiiciiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiicdddddddddddcicddd
+dciiiiiiiiiiiiiiiiiiicddddddddddddciiiiiiicdcddddddddddddddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddciiiiiiii
+iiiiiiiiiicddciciiiii
 ~~~
 
-## Brainf***
+---
+
+# BF
+
+Mind-melding. Likely the most well-known esolang.
 
 ---
 
+~~~brainfuck
 
-
----
-
-## Ook!
-
----
-
-    Example
+~~~
 
 ---
 
 ## Anguish
 
-Language written entirely in non-printable Unicode characters
+Language written entirely in non-printable Unicode characters:
 
-* Simple substitution for BF
+~~~
 
----
-
-    Example
+~~~
 
 ---
 
+<!-- .slide: data-background="#00AFFF" -->
+
+# Thanks!
+## Questions?
+
+@davidjb / [davidjb.com](http://davidjb.com)
 
