@@ -42,6 +42,6 @@ make
 cp lci ../../bin
 popd
 
-#Brainfuck
+#Brainfuck is already present in this repo
 
 #Anguish
