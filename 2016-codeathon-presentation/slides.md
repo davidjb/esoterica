@@ -70,6 +70,7 @@ TALK TO THE HAND 'true'
         at org.arnoldc.ArnoldC$.main(ArnoldC.scala:21)
         at org.arnoldc.ArnoldC.main(ArnoldC.scala)
 ~~~
+<!-- .element class="wrap" -->
 
 ---
 
@@ -117,6 +118,7 @@ Tell us all that "this script Trumps all others"
 Donald took down the web site.
 America is great.
 ~~~
+<!-- .element class="wrap" -->
 
 ---
 
@@ -150,25 +152,31 @@ What are you doing on line 2?
 trumpscript.utils.SystemException:
 Part of the beauty of me is I'm very rich.
 ~~~
+<!-- .element class="wrap" -->
 
 ---
 
 ## Why use it
 
+* You *are* Donald Trump
 * Write programs from common language
 * Easily mix in comments (ignores non-keywords)
 * Uses Python 3
-* Guaranteed single end point to a program
-* You *are* Donald Trump
+
+---
+
+![tweet](img/trump-tweet.png)
+
+Sadly RT to 100,000 people
 
 ---
 
 ## Why not
 
+* Doesn't integrate with ArnoldC
 * No floats and ints must be > 1,000,000
 * No i18n (American English only)
 * No Windows support (Trump is non-PC)
-* Docs+Wiki disappeared from public repo on Saturday!
 * Debugging is awful
 * File extension collision with TypeScript
 
@@ -210,6 +218,7 @@ HAI 1.2
   OIC
 KTHXBYE
 ~~~
+<!-- .element class="wrap" -->
 
 ---
 
@@ -237,15 +246,16 @@ ZOMG Codeathon 2050 starting in...
 
 ## Why not
 
+* No dates
 * `NUMBR` vs `NUMBAR`
 * `IM IN YR LOOPZ UPPIN/NERFIN` don't work yet
 * Meanwhile in Python:
 
-  ~~~python
-  from datetime import datetime
-  print('%s days til Codeathon!' % (datetime(int(
-      input('Future Year? ')), 6, 26) - datetime.now()).days)
-  ~~~
+~~~python
+from datetime import datetime
+print('%s days til Codeathon!' % (datetime(int(input('Future Year? ')), 6, 26) - datetime.now()).days)
+~~~
+<!-- .element class="wrap" -->
 
 ---
 
@@ -253,7 +263,7 @@ ZOMG Codeathon 2050 starting in...
 
 # Deadfish
 
-You have one variable and can do the following:
+One variable and ++, --, \**2 and print operators
 
 ---
 
@@ -266,46 +276,108 @@ Note the **XKCD** reference
 
 ---
 
+#### Fibonacci: 1 1 2 3 5 8 13 21…
 ~~~deadfish
-Fibonacci
 » icciciciiciiiciiiiiciiiiiiiiciiiiiiiiiiiiiciiiiiiiiiiiiiiiiiiiiic
-LOST numbers
+~~~
+#### LOST numbers: 4 8 15 16 23 42
+~~~deadfish
 » iiiiciiiiciiiiiiiciciiiiiiiciiiiiiiiiiiiiiiiiiic
-"Codeathon 2016" in ASCII
-» iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-iiiciiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiicdddddddddddcicddd
-dciiiiiiiiiiiiiiiiiiicddddddddddddciiiiiiicdcddddddddddddddddddddd
-dddddddddddddddddddddddddddddddddddddddddddddddddddddddddciiiiiiii
-iiiiiiiiiicddciciiiii
+~~~
+#### "Codeathon 2016" in ASCII values
+~~~deadfish
+» iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiciiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiicddddddddd
+ddcicddddciiiiiiiiiiiiiiiiiiicddddddddddddciiiiiiicdcddddddddd
+dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+dddddddciiiiiiiiiiiiiiiiiicddciciiiii
 ~~~
 
 ---
 
-# BF
+![BF](img/bf.jpg)
 
-Mind-melding. Likely the most well-known esolang.
+# BrainF***
+
+BF. Mind-melding. Likely the most well-known esolang.
 
 ---
+
+Increment, Decrement, Move left/right, [] while loop
 
 ~~~brainfuck
-
+++++++++++[>+++++++>+++++++++++>++++++++++
+>++++++++++>++++++++++>++++++++++++>++++++
+>++++>+++++++++++>+++++++++++>+++>+++++>++
+>+++>+++++>+++++<<<<<<<<<<<<<<-]>---.>+.>.
+>>+.>---.>----.>++++.>+.>.>++.>.>--.>-.>++
+»++.
 ~~~
+<!-- .element class="wrap" -->
+
+    Codeathon 2016
 
 ---
+
+## Why use it
+
+* All other keys on keyboard are broken
+* You like headaches
+* Semantic syntax
+
+---
+
+## Why not
+
+* Accidental use of syntax in comments is easy
+* A little hard to read
+
+---
+
+![Anguish](img/anguish.jpg) <!-- .element style="height: 300px" -->
 
 ## Anguish
 
-Language written entirely in non-printable Unicode characters:
+BF flavour written entirely in non-printable Unicode characters.
 
+---
+
+## Example
+
+https://github.com/davidjb/esoterica/blob/master/src/david.anguish
+
+## Output
 ~~~
-
+David
 ~~~
 
 ---
 
-<!-- .slide: data-background="#00AFFF" -->
+## Why use it
+
+* You're at a codeathon
+* You're insane
+* You bought one of those Unicode-non-printable keyboards from Amazon and
+  finally have a use for it.
+
+![keyboard](img/blank-keyboard.jpg) <!-- .element style="height: 200px"-->
+
+---
+
+## Why not
+
+> Debugging. Editing. Typing. Memory management.
+Documentation. Brain hurts. Oww. Sleep time.
+
+---
+
+<!-- .slide: data-background="#00FF99" -->
 
 # Thanks!
+
+Code and slides @  
+https://github.com/davidjb/esoterica
+
 ## Questions?
 
 @davidjb / [davidjb.com](http://davidjb.com)
