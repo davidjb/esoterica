@@ -342,7 +342,7 @@ BF flavour written entirely in non-printable Unicode characters.
 
 ---
 
-## Example
+## Wrote interpreter in Python for:
 
 https://github.com/davidjb/esoterica/blob/master/src/david.anguish
 
@@ -368,6 +368,20 @@ David
 
 > Debugging. Editing. Typing. Memory management.
 Documentation. Brain hurts. Oww. Sleep time.
+
+---
+
+## Coming soon: Perfection
+
+Improving your code quality through rewriting
+
+* Lint warnings delete your code
+* Syntax errors delete the interpreter
+* Uncaught exceptions erase your hard drive
+
+---
+
+# The only lang that makes you afraid to run it™
 
 ---
 
