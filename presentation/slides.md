@@ -168,7 +168,7 @@ we'll see you soon, in
 
 ## Why use it
 
-* Write programs from common language
+* Write programs in common language
 * Easily mix in comments (ignores non-keywords)
 * Written in Python!
 * You *are* Donald Trump
@@ -269,7 +269,11 @@ BF. Mind-melding. Likely the most well-known esolang.
 
 ---
 
-Increment, Decrement, Move left/right, [] while loop
+Increment `+`    Decrement `-`
+
+Move pointer left/right `< >`
+
+While loop `[]` ;  Print `.` ; Input `,`
 
 ~~~brainfuck
 ++++++++++[>++++++++>++++++++++++>
@@ -305,7 +309,7 @@ Increment, Decrement, Move left/right, [] while loop
 ## Anguish
 
 BF flavour written entirely in *invisible* Unicode characters;
-(0-width, not just whitespace)
+(0-width!)
 
 ---
 
@@ -315,6 +319,18 @@ BF flavour written entirely in *invisible* Unicode characters;
 ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡ ⁣ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡ ⁣ ⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡ ⁣ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁣ ⁢ ⁢ ⁢ ⁢⁢ ⁣ 
 ~~~
 
+---
+
+~~~
+>   [⁠] U+2060 WORD JOINER [Cf]
+<   [​] U+200B ZERO WIDTH SPACE [Cf]
++   [⁡] U+2061 FUNCTION APPLICATION [Cf]
+-   [⁢] U+2062 INVISIBLE TIMES [Cf]
+.   [⁣] U+2063 INVISIBLE SEPARATOR [Cf]
+,   [﻿] U+FEFF ZERO WIDTH NO-BREAK SPACE [Cf]
+[   [‌] U+200C ZERO WIDTH NON-JOINER [Cf]
+]   [‍] U+200D ZERO WIDTH JOINER [Cf]
+~~~
 
 ---
 
@@ -324,13 +340,16 @@ BF flavour written entirely in *invisible* Unicode characters;
 David
 ~~~
 
+* Typed by hand into Vim
+* Lot of BF characters!
+
 https://github.com/davidjb/esoterica/blob/master/src/david.anguish
 
 ---
 
 ## Why use it
 
-* Hiding code
+* Hiding code / exploits
 * You bought one of those Unicode-non-printable keyboards from Amazon and
   **FINALLY** have a use for it!
 
@@ -342,13 +361,19 @@ https://github.com/davidjb/esoterica/blob/master/src/david.anguish
 
 Improving your code quality through rewriting
 
-* Lint warnings delete your code
-* Syntax errors delete the interpreter
-* Uncaught exceptions erase your drive
+---
+
+* Lint warnings **delete the code**
+* Syntax errors **remove the interpreter**
+* Uncaught exceptions **erase your drive**
 
 ---
 
 # The only lang that makes you afraid to finish writing it™
+
+---
+
+## Have at it, PyCon AU
 
 ---
 
