@@ -14,4 +14,12 @@ Requires Java. Eww.
 
     arnoldc src/showtime.arnoldc
 
+## TrumpScript
 
+Needs Python.
+
+    ./bin/TRUMP --shut-up src/pycon.ts
+
+## LOLCode
+
+    ./bin/lci src/pycon.lols

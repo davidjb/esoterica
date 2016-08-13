@@ -1,5 +1,5 @@
-# Esoterica
-## A short review of some curious esoteric languages.
+# 5 languages in 5 minutes
+### Esoteric languages for your next project
 
 ---
 
@@ -16,30 +16,30 @@
 
 # ArnoldC
 
-Keywords and sytax are quotes from Schwarzenegger movies.
+Keywords and syntax are quotes from Schwarzenegger movies. (Java, not C)
 
 ---
 
 ~~~bash
-LISTEN TO ME VERY CAREFULLY SKYNET
-I NEED YOUR CLOTHES YOUR BOOTS AND YOUR MOTORCYCLE JOHN
+LISTEN TO ME VERY CAREFULLY PYTHONISTAS
+I NEED YOUR CLOTHES YOUR BOOTS AND YOUR MOTORCYCLE GUIDO
 GIVE THESE PEOPLE AIR
-GET TO THE CHOPPER JOHN
-HERE IS MY INVITATION JOHN
+GET TO THE CHOPPER GUIDO
+HERE IS MY INVITATION GUIDO
 GET UP 1
 ENOUGH TALK
-I'LL BE BACK JOHN
+I'LL BE BACK GUIDO
 HASTA LA VISTA, BABY
 
 IT'S SHOWTIME
-HEY CHRISTMAS TREE CODEATHON
+HEY CHRISTMAS TREE PYCON
 YOU SET US UP 2016
-TALK TO THE HAND "Welcome to Codeathon"
-TALK TO THE HAND CODEATHON
-GET YOUR ASS TO MARS CODEATHON
-DO IT NOW SKYNET CODEATHON
+TALK TO THE HAND "Farewell from PyCon AU"
+TALK TO THE HAND PYCON
+GET YOUR A** TO MARS PYCON
+DO IT NOW PYTHONISTAS PYCON
 TALK TO THE HAND "See you around in"
-TALK TO THE HAND CODEATHON
+TALK TO THE HAND PYCON
 
 YOU HAVE BEEN TERMINATED
 ~~~
@@ -49,8 +49,8 @@ YOU HAVE BEEN TERMINATED
 ## Output
 
 ~~~bash
-$ arnoldc src/codeathon.arnoldc
-Welcome to Codeathon
+$ arnoldc src/pycon.arnoldc
+Farewell from PyCon AU
 2016
 See you around in
 2017
@@ -77,8 +77,8 @@ TALK TO THE HAND 'true'
 ## Why use it
 
 * Good documentation
+* Video links to look up quotes
 * Decent debugging
-* Funny exceptions
 * You *are* Arnold Schwarzenegger
 
 ---
@@ -86,10 +86,11 @@ TALK TO THE HAND 'true'
 ## Why not
 
 * ![MA15+](img/ma-rating.png) <!-- .element class="plain middle" style="height: 150px" -->
+* `Else` statements aren't kid-friendly
 * No comment syntax: `# Awww`
 * Only has 16-bit signed int variables (!!)
 * No less-than operator
-* It's written in Java.  Eww.
+* It's written in Java
 * Hard to install
 
 ---
@@ -98,25 +99,44 @@ TALK TO THE HAND 'true'
 
 # TrumpScript
 
-Language based upon speeches, political propaganda and more centered on Donald
+Language based upon speeches, political propaganda and more centred on Donald
 Trump.
 
 ---
 
 ~~~
-I tell you now "the codeathon is over"
-Make sure "your programs work"
-Just tell us you're sure!
+Thank you very much
+It is great to be "here"
+Let me say that "PyCon AU is nearly done"
 
-Make this year great in "2016"
-Make next year better in "2017"
+This year is "2016"
+Next year is "2017"
+Please tell us we will "see you soon, in "; say next year?
+Make next year "great" again
+Bigger and better than it was before!
 
-Tell us that "we'll see you soon, in "; say next year?
-
-Even I agree "the codeathon was fun"!
-Tell us all that "this script Trumps all others"
-Donald took down the web site.
+Go forward and work together with any language or cloud
 America is great.
+~~~
+<!-- .element class="wrap" -->
+
+---
+
+## No ❤️ Mac
+
+~~~
+Traceback (most recent call last):
+  File "./langs/TrumpScript/src/trumpscript/main.py", line 30, in <module>
+    main()
+  File "./langs/TrumpScript/src/trumpscript/main.py", line 24, in main
+    Utils.verify_system(args.Wall)
+  File "/Users/david1/dev/esoterica/langs/TrumpScript/src/trumpscript/utils.py", line 34, in verify_system
+    Utils.boycott_apple()
+  File "/Users/david1/dev/esoterica/langs/TrumpScript/src/trumpscript/utils.py", line 72, in boycott_apple
+    raise Utils.SystemException('boycott');
+  File "/Users/david1/dev/esoterica/langs/TrumpScript/src/trumpscript/utils.py", line 21, in __init__
+    raise Exception(random.choice(ERROR_CODES[msg_code]))
+Exception: Mac? 'Boycott all Apple products ... [censored]'
 ~~~
 <!-- .element class="wrap" -->
 
@@ -125,60 +145,42 @@ America is great.
 ## Output
 
 ~~~bash
-$ TRUMP src/codeathon.ts
-Compiled, starting execution
--------------------
+$ TRUMP src/pycon.ts
+PING alibaba.cn (140.205.248.2): 56 data bytes
+64 bytes from 140.205.248.2: icmp_seq=0 ttl=14 time=330.005 ms
 
-the codeathon is over
-your programs work
+--- alibaba.cn ping statistics ---
+1 packets transmitted, 1 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 330.005/330.005/330.005/0.000 ms
+PING facebook.com (173.252.91.4): 56 data bytes
+64 bytes from 173.252.91.4: icmp_seq=0 ttl=74 time=358.766 ms
+
+--- facebook.com ping statistics ---
+1 packets transmitted, 1 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 358.766/358.766/358.766/0.000 ms
+
+pycon au is nearly done
 we'll see you soon, in
 2017
-this script trumps all others
 ~~~
-
----
-
-## Exceptions
-
-`2016` is too small a variable, has to be over 1000000:
-
-~~~
-Parsing error:
-What are you doing on line 2?
-
-  File "/home/david/dev/src/esoterica/langs/TrumpScript/src/trumpscript/tokenizer.py", line 329, in _error
-    raise Utils.SystemException(message_code)
-
-trumpscript.utils.SystemException:
-Part of the beauty of me is I'm very rich.
-~~~
-<!-- .element class="wrap" -->
 
 ---
 
 ## Why use it
 
-* You *are* Donald Trump
 * Write programs from common language
 * Easily mix in comments (ignores non-keywords)
-* Uses Python 3
-
----
-
-![tweet](img/trump-tweet.png)
-
-Sadly RT to 100,000 people
+* Written in Python!
+* You *are* Donald Trump
 
 ---
 
 ## Why not
 
-* Doesn't integrate with ArnoldC
-* No floats and ints must be > 1,000,000
-* No i18n (American English only)
+* Doesn't agree with ArnoldC (or any minorities)
 * No Windows support (Trump is non-PC)
-* Debugging is awful
-* File extension collision with TypeScript
+* No Mac support (Trump boycotts Apple)
+* No i18n (American English only)
 
 ---
 
@@ -191,19 +193,19 @@ I can haz Internet memes as syntax.
 ---
 
 ~~~
-OBTW CODEATHON 2016!
+OBTW PYCON_AU 2016!
      long comments FTW TLDR
 HAI 1.2
   CAN HAS STDIO?
   I HAS A TODAY, TODAY R 2016
-  I HAS A CODEATHON, CODEATHON R NOOB
+  I HAS A PYCON_AU, PYCON_AU R NOOB
   VISIBLE "Future Year? "
-  GIMMEH CODEATHON, CODEATHON IS NOW A NUMBR
+  GIMMEH PYCON_AU, PYCON_AU IS NOW A NUMBR
 
-  DIFFRINT CODEATHON AN SMALLR OF CODEATHON AN TODAY
+  DIFFRINT PYCON_AU AN SMALLR OF PYCON_AU AN TODAY
   O RLY?
     YA RLY
-      I HAS A YEARZ, YEARZ R DIFF OF CODEATHON AN TODAY
+      I HAS A YEARZ, YEARZ R DIFF OF PYCON_AU AN TODAY
       I HAS A DAYZ, DAYZ R -2
       IM IN YR LOOPZ
         YEARZ R DIFF OF YEARZ AN 1
@@ -211,7 +213,7 @@ HAI 1.2
         BOTH SAEM 0 MOD OF YEARZ AN 4, O RLY?, YA RLY, DAYZ R SUM OF DAYZ AN 1, OIC
         BOTH SAEM YEARZ AN 0, O RLY?, YA RLY, GTFO, OIC
       IM OUTTA YR LOOPZ
-      VISIBLE SMOOSH "ZOMG Codeathon " CODEATHON " starting in... :)" MKAY
+      VISIBLE SMOOSH "ZOMG PyCon AU " PYCON_AU " starting in... :)" MKAY
       VISIBLE DAYZ " days! Getz ready!"
     NO WAI
       VISIBLE "Later year pls. KTHXBAI."
@@ -225,10 +227,12 @@ KTHXBYE
 ## Output
 
 ~~~bash
-$ lci src/codeathon.lols
+$ lci src/pycon.lols
+lci src/pycon.lols
 Future Year?
 2050
-ZOMG Codeathon 2050 starting in...
+ZOMG PyCon AU 2050 starting in approx...
+
 12417 days! Getz ready!
 ~~~
 
@@ -237,10 +241,8 @@ ZOMG Codeathon 2050 starting in...
 ## Why use it
 
 * Uses Gen-Y natural language
-* Well supported
-* Official spec docs (!!)
-* Versioned
-* Whitespace
+* Versioned spec docs (!!)
+* Whitespace indenting
 
 ---
 
@@ -253,51 +255,15 @@ ZOMG Codeathon 2050 starting in...
 
 ~~~python
 from datetime import datetime
-print('%s days til Codeathon!' % (datetime(int(input('Future Year? ')), 6, 26) - datetime.now()).days)
+print('%s days til PyCon AU!' % (datetime(int(input('Future Year? ')), 8, 13) - datetime.now()).days)
 ~~~
 <!-- .element class="wrap" -->
 
 ---
 
-![deadfish](img/deadfish.png) <!-- .element style="height: 200px" -->
-
-# Deadfish
-
-One variable and ++, --, \**2 and print operators
-
----
-
-* `i` / `x`: increment
-* `d` / `d`: decrement
-* `s` / `k`: square
-* `o` / `c`: output
-
-Note the **XKCD** reference
-
----
-
-#### Fibonacci: 1 1 2 3 5 8 13 21…
-~~~deadfish
-» icciciciiciiiciiiiiciiiiiiiiciiiiiiiiiiiiiciiiiiiiiiiiiiiiiiiiiic
-~~~
-#### LOST numbers: 4 8 15 16 23 42
-~~~deadfish
-» iiiiciiiiciiiiiiiciciiiiiiiciiiiiiiiiiiiiiiiiiic
-~~~
-#### "Codeathon 2016" in ASCII values
-~~~deadfish
-» iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-iiiiiiiciiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiicddddddddd
-ddcicddddciiiiiiiiiiiiiiiiiiicddddddddddddciiiiiiicdcddddddddd
-dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-dddddddciiiiiiiiiiiiiiiiiicddciciiiii
-~~~
-
----
-
 ![BF](img/bf.jpg)
 
-# BrainF***
+# Brain****
 
 BF. Mind-melding. Likely the most well-known esolang.
 
@@ -306,23 +272,22 @@ BF. Mind-melding. Likely the most well-known esolang.
 Increment, Decrement, Move left/right, [] while loop
 
 ~~~brainfuck
-++++++++++[>+++++++>+++++++++++>++++++++++
->++++++++++>++++++++++>++++++++++++>++++++
->++++>+++++++++++>+++++++++++>+++>+++++>++
->+++>+++++>+++++<<<<<<<<<<<<<<-]>---.>+.>.
->>+.>---.>----.>++++.>+.>.>++.>.>--.>-.>++
-»++.
+++++++++++[>++++++++>++++++++++++>
++++++++>+++++++++++>+++++++++++>++
++>+++++++>+++++++++>+++>+++++>++++
++>+++++>+++++<<<<<<<<<<<<<-]>.>+.>
+---.>+.>.>++.>-----.>-----.>++.>.>
+--.>-.>++++.
 ~~~
 <!-- .element class="wrap" -->
 
-    Codeathon 2016
+    PyCon AU 2016
 
 ---
 
 ## Why use it
 
 * All other keys on keyboard are broken
-* You like headaches
 * Semantic syntax
 
 ---
@@ -330,7 +295,8 @@ Increment, Decrement, Move left/right, [] while loop
 ## Why not
 
 * Accidental use of syntax in comments is easy
-* A little hard to read
+* Little hard to read
+* No linter (yet?)
 
 ---
 
@@ -338,50 +304,51 @@ Increment, Decrement, Move left/right, [] while loop
 
 ## Anguish
 
-BF flavour written entirely in non-printable Unicode characters.
+BF flavour written entirely in *invisible* Unicode characters;
+(0-width, not just whitespace)
 
 ---
 
-## Wrote interpreter in Python for:
+### Yes, there's a program there.
 
-https://github.com/davidjb/esoterica/blob/master/src/david.anguish
+~~~
+⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡ ⁣ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡ ⁣ ⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡⁡⁡⁡ ⁡⁡ ⁣ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁣ ⁢ ⁢ ⁢ ⁢⁢ ⁣ 
+~~~
+
+
+---
 
 ## Output
+
 ~~~
 David
 ~~~
+
+https://github.com/davidjb/esoterica/blob/master/src/david.anguish
 
 ---
 
 ## Why use it
 
-* You're at a codeathon
-* You're insane
+* Hiding code
 * You bought one of those Unicode-non-printable keyboards from Amazon and
-  finally have a use for it.
+  **FINALLY** have a use for it!
 
 ![keyboard](img/blank-keyboard.jpg) <!-- .element style="height: 200px"-->
 
 ---
 
-## Why not
-
-> Debugging. Editing. Typing. Memory management.
-Documentation. Brain hurts. Oww. Sleep time.
-
----
-
-## Coming soon: Perfection
+## Coming soon: Pyfection
 
 Improving your code quality through rewriting
 
 * Lint warnings delete your code
 * Syntax errors delete the interpreter
-* Uncaught exceptions erase your hard drive
+* Uncaught exceptions erase your drive
 
 ---
 
-# The only lang that makes you afraid to run it™
+# The only lang that makes you afraid to finish writing it™
 
 ---
 
@@ -389,10 +356,11 @@ Improving your code quality through rewriting
 
 # Thanks!
 
-Code and slides @  
+Code and slides @
 https://github.com/davidjb/esoterica
 
-## Questions?
+@davidjb_ / [davidjb.com](http://davidjb.com)
 
-@davidjb / [davidjb.com](http://davidjb.com)
+From North Queensland?
+<http://www.meetup.com/dev-nq/>
 

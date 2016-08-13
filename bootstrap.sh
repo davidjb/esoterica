@@ -5,7 +5,7 @@ mkdir -p bin
 
 #TrumpScript
 #https://github.com/samshadwell/TrumpScript
-git clone https://github.com/samshadwell/TrumpScript.git langs/
+git clone https://github.com/samshadwell/TrumpScript.git langs/TrumpScript
 echo """
 #!/bin/sh
 root=\$(dirname -- \"$0\")/langs/TrumpScript
