@@ -1,6 +1,8 @@
 #!/bin/bash
 # Interesting: wimpmode
 
+mkdir -p bin
+
 #TrumpScript
 #https://github.com/samshadwell/TrumpScript
 git clone https://github.com/samshadwell/TrumpScript.git langs/
