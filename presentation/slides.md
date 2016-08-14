@@ -1,9 +1,10 @@
 # 5 languages in 5 minutes
-### Esoteric languages for your next project
+
+### Languages for your next project
 
 ---
 
-<!-- .slide: data-background="#33AFFF" -->
+<!-- .slide: data-background="#62DAFF" -->
 ## About me
 
 * David Beitey
