@@ -3,7 +3,7 @@
 
 ---
 
-<!-- .slide: data-background="#00AFFF" -->
+<!-- .slide: data-background="#33AFFF" -->
 ## About me
 
 * David Beitey
@@ -78,7 +78,7 @@ TALK TO THE HAND 'true'
 
 * Good documentation
 * Video links to look up quotes
-* Decent debugging
+* Clear debugging
 * You *are* Arnold Schwarzenegger
 
 ---
@@ -86,9 +86,9 @@ TALK TO THE HAND 'true'
 ## Why not
 
 * ![MA15+](img/ma-rating.png) <!-- .element class="plain middle" style="height: 150px" -->
-* `Else` statements aren't kid-friendly
-* No comment syntax: `# Awww`
-* Only has 16-bit signed int variables (!!)
+* e.g.  `Else` statements aren't kid-friendly
+* No comment syntax: `HA HA HA QUIET`?
+* Only has 16-bit signed int variables
 * No less-than operator
 * It's written in Java
 * Hard to install
@@ -99,8 +99,7 @@ TALK TO THE HAND 'true'
 
 # TrumpScript
 
-Language based upon speeches, political propaganda and more centred on Donald
-Trump.
+Based upon speeches, political content & more from Donald Trump.
 
 ---
 
@@ -116,6 +115,7 @@ Make next year "great" again
 Bigger and better than it was before!
 
 Go forward and work together with any language or cloud
+But serve pages from the United States because
 America is great.
 ~~~
 <!-- .element class="wrap" -->
@@ -126,10 +126,6 @@ America is great.
 
 ~~~
 Traceback (most recent call last):
-  File "./langs/TrumpScript/src/trumpscript/main.py", line 30, in <module>
-    main()
-  File "./langs/TrumpScript/src/trumpscript/main.py", line 24, in main
-    Utils.verify_system(args.Wall)
   File "/Users/david1/dev/esoterica/langs/TrumpScript/src/trumpscript/utils.py", line 34, in verify_system
     Utils.boycott_apple()
   File "/Users/david1/dev/esoterica/langs/TrumpScript/src/trumpscript/utils.py", line 72, in boycott_apple
@@ -148,14 +144,10 @@ Exception: Mac? 'Boycott all Apple products ... [censored]'
 $ TRUMP src/pycon.ts
 PING alibaba.cn (140.205.248.2): 56 data bytes
 64 bytes from 140.205.248.2: icmp_seq=0 ttl=14 time=330.005 ms
-
---- alibaba.cn ping statistics ---
 1 packets transmitted, 1 packets received, 0.0% packet loss
-round-trip min/avg/max/stddev = 330.005/330.005/330.005/0.000 ms
+round-trip min/avg/max/stddev = 358.766/358.766/358.766/0.000 ms
 PING facebook.com (173.252.91.4): 56 data bytes
 64 bytes from 173.252.91.4: icmp_seq=0 ttl=74 time=358.766 ms
-
---- facebook.com ping statistics ---
 1 packets transmitted, 1 packets received, 0.0% packet loss
 round-trip min/avg/max/stddev = 358.766/358.766/358.766/0.000 ms
 
@@ -170,17 +162,18 @@ we'll see you soon, in
 
 * Write programs in common language
 * Easily mix in comments (ignores non-keywords)
-* Written in Python!
+* Easy to hack, written in Python!
 * You *are* Donald Trump
 
 ---
 
 ## Why not
 
-* Doesn't agree with ArnoldC (or any minorities)
+* Debugging is guesswork
 * No Windows support (Trump is non-PC)
 * No Mac support (Trump boycotts Apple)
 * No i18n (American English only)
+* Doesn't integrate with ArnoldC
 
 ---
 
@@ -188,7 +181,7 @@ we'll see you soon, in
 
 # LOLCode
 
-I can haz Internet memes as syntax.
+I can haz Internet meme syntax.
 
 ---
 
@@ -241,7 +234,7 @@ ZOMG PyCon AU 2050 starting in approx...
 ## Why use it
 
 * Uses Gen-Y natural language
-* Versioned spec docs (!!)
+* Formal, versioned spec docs (!!)
 * Whitespace indenting
 
 ---
@@ -269,11 +262,17 @@ BF. Mind-melding. Likely the most well-known esolang.
 
 ---
 
-Increment `+`    Decrement `-`
+~~~
++   Increment value under pointer
+-   Decrement value under pointer
+<   Move pointer left
+>   Move pointer right
+[]  While loop
+.   Print value under pointer
+,   Input a value
+~~~
 
-Move pointer left/right `< >`
-
-While loop `[]` ;  Print `.` ; Input `,`
+---
 
 ~~~brainfuck
 ++++++++++[>++++++++>++++++++++++>
@@ -285,22 +284,26 @@ While loop `[]` ;  Print `.` ; Input `,`
 ~~~
 <!-- .element class="wrap" -->
 
-    PyCon AU 2016
+~~~
+$ bin/bf src/pycon.bf
+PyCon AU 2016
+~~~
 
 ---
 
 ## Why use it
 
-* All other keys on keyboard are broken
 * Semantic syntax
+* Supported by Pygments
+* All other keys on keyboard are broken
 
 ---
 
 ## Why not
 
-* Accidental use of syntax in comments is easy
-* Little hard to read
-* No linter (yet?)
+* Accidental use of syntax in comments, is easy
+* Readability?
+* No linter or PEP8 style guide (yet?)
 
 ---
 
@@ -341,7 +344,8 @@ David
 ~~~
 
 * Typed by hand into Vim
-* Lot of BF characters!
+* Lot of characters! (Hence 5 chars vs 13)
+* Hurts terminal/vim/tmux on editing
 
 https://github.com/davidjb/esoterica/blob/master/src/david.anguish
 
@@ -359,11 +363,11 @@ https://github.com/davidjb/esoterica/blob/master/src/david.anguish
 
 ## Coming soon: Pyfection
 
-Improving your code quality through rewriting
+Improving your Python code through forced rewriting
 
 ---
 
-* Lint warnings **delete the code**
+* PEP8 violations **delete the code**
 * Syntax errors **remove the interpreter**
 * Uncaught exceptions **erase your drive**
 
@@ -377,15 +381,17 @@ Improving your code quality through rewriting
 
 ---
 
-<!-- .slide: data-background="#00FF99" -->
+<!-- .slide: data-background="#fff" -->
 
 # Thanks!
 
-Code and slides @
+Code and slides
+
 https://github.com/davidjb/esoterica
 
 @davidjb_ / [davidjb.com](http://davidjb.com)
 
-From North Queensland?
+From North Queensland? See me!
+
 <http://www.meetup.com/dev-nq/>
 
